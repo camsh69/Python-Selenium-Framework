@@ -1,5 +1,7 @@
 import pytest
+from pageObjects.CheckoutPage import CheckOutPage
 from utilities.BaseClass import BaseClass
+from pageObjects.HomePage import HomePage
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
@@ -8,17 +10,16 @@ from selenium.webdriver.support.wait import WebDriverWait
 class TestOne(BaseClass):
 
     def test_e2e(self):
+        homePage = HomePage(self.driver)
+        homePage.shopItems().click()
 
-        self.driver.get("https://rahulshettyacademy.com/angularpractice/")
-        self.driver.find_element(By.CSS_SELECTOR, "a[href*='shop']").click()
-        products = self.driver.find_elements(
-            By.XPATH, "//div[@class='card h-100']")
+        checkOutPage = CheckOutPage(self.driver)
+        products = checkOutPage.getProducts()
 
-        # //div[@class='card h-100']/div/h4/a
-        # product =//div[@class='card h-100']
         for product in products:
-            productName = product.find_element(By.XPATH, "div/h4/a").text
-            if productName == "Blackberry":
+            productName = product.text
+            if productName == "Nonsense":
+                print(productName)
                 # Add item into cart
                 product.find_element(By.XPATH, "div/button").click()
 

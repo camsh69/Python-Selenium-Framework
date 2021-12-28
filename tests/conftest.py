@@ -5,8 +5,6 @@ from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.chrome.service import Service
 
-# allows to choose browser to run test - 'pytest --browser_name=firefox' for example
-
 
 def pytest_addoption(parser):
     parser.addoption(
@@ -18,13 +16,13 @@ def pytest_addoption(parser):
 def setup(request):
 
     browser_name = request.config.getoption("--browser_name")
-
+    # allows to choose browser to run test - 'pytest --browser_name=firefox' for example
     if browser_name == "chrome":
         service = Service(ChromeDriverManager().install())
         options = webdriver.ChromeOptions()
         options.add_experimental_option('excludeSwitches', ['enable-logging'])
         driver = webdriver.Chrome(service=service, options=options)
-    if browser_name == "firefox":
+    elif browser_name == "firefox":
         service = Service(
             executable_path=GeckoDriverManager().install())
         driver = webdriver.Firefox(service=service)
@@ -34,6 +32,7 @@ def setup(request):
 
     driver.implicitly_wait(5)
     driver.maximize_window()
+    driver.get("https://rahulshettyacademy.com/angularpractice/")
     request.cls.driver = driver
     yield
     driver.close()
