@@ -14,7 +14,7 @@ def pytest_addoption(parser):
 
 @pytest.fixture(scope="class")
 def setup(request):
-    headless = True
+    headless = False
     browser_name = request.config.getoption("--browser_name")
     # choose browser to run test, default is chrome - 'pytest --browser_name=firefox' for example
     if browser_name == "chrome":
