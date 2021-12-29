@@ -4,7 +4,7 @@ from pageObjects.HomePage import HomePage
 from TestData.HomePageData import HomePageData
 
 
-class TestHomePAge(BaseClass):
+class TestHomePage(BaseClass):
 
     def test_formSubmission(self, getData):
         homepage = HomePage(self.driver)
