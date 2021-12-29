@@ -1,4 +1,6 @@
 from selenium.webdriver.common.by import By
+from pageObjects.ConfirmPage import ConfirmPage
+
 
 class CheckOutPage:
 
@@ -20,4 +22,6 @@ class CheckOutPage:
         return self.driver.find_element(*CheckOutPage.checkOutBtn)
 
     def selectCheckOutBtn2(self):
-        return self.driver.find_element(*CheckOutPage.checkOutBtn2)
+        self.driver.find_element(*CheckOutPage.checkOutBtn2).click()
+        confirmPage = ConfirmPage(self.driver)
+        return confirmPage

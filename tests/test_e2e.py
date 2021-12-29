@@ -11,23 +11,21 @@ class TestOne(BaseClass):
 
     def test_e2e(self):
         homePage = HomePage(self.driver)
-        homePage.shopItems().click()
 
-        checkOutPage = CheckOutPage(self.driver)
+        checkOutPage = homePage.shopItems()
+
         cards = checkOutPage.getCardTitles()
         i = -1
         for card in cards:
             i += 1
             cardText = card.text
             if cardText == "Blackberry":
-                print(checkOutPage.getCardFooter())
                 checkOutPage.getCardFooter()[i].click()
 
         checkOutPage.selectCheckOutBtn().click()
 
-        checkOutPage.selectCheckOutBtn2().click()
+        confirmPage = checkOutPage.selectCheckOutBtn2()
 
-        confirmPage = ConfirmPage(self.driver)
         confirmPage.selectLocationBox().send_keys("ind")
 
         wait = WebDriverWait(self.driver, 7)
