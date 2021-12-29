@@ -1,10 +1,5 @@
-from pageObjects.ConfirmPage import ConfirmPage
 from utilities.BaseClass import BaseClass
-from pageObjects.CheckoutPage import CheckOutPage
 from pageObjects.HomePage import HomePage
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.wait import WebDriverWait
 
 
 class TestOne(BaseClass):
@@ -28,8 +23,8 @@ class TestOne(BaseClass):
 
         confirmPage.selectLocationBox().send_keys("ind")
 
-        wait = WebDriverWait(self.driver, 7)
-        wait.until(EC.presence_of_element_located(confirmPage.countryText))
+        self.verifyLinkPresence("India")
+
         confirmPage.selectCountryText().click()
 
         confirmPage.selectCheckBox().click()
