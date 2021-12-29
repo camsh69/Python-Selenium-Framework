@@ -38,5 +38,3 @@ class TestOne(BaseClass):
         log.info(f"Text received from application is {successText}")
 
         assert "Success! Thank you!" in successText
-
-        # self.driver.get_screenshot_as_file("screen.png")
