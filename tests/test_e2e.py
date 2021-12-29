@@ -5,8 +5,9 @@ from pageObjects.HomePage import HomePage
 class TestOne(BaseClass):
 
     def test_e2e(self):
+        log = self.getLogger()
         homePage = HomePage(self.driver)
-
+        log.info("getting all the card titles")
         checkOutPage = homePage.shopItems()
 
         cards = checkOutPage.getCardTitles()
@@ -14,6 +15,7 @@ class TestOne(BaseClass):
         for card in cards:
             i += 1
             cardText = card.text
+            log.info(cardText)
             if cardText == "Blackberry":
                 checkOutPage.getCardFooter()[i].click()
 
@@ -21,6 +23,7 @@ class TestOne(BaseClass):
 
         confirmPage = checkOutPage.selectCheckOutBtn2()
 
+        log.info("Entering country name as 'ind'")
         confirmPage.selectLocationBox().send_keys("ind")
 
         self.verifyLinkPresence("India")
@@ -32,6 +35,7 @@ class TestOne(BaseClass):
         confirmPage.selectPurchaseBtn().click()
 
         successText = confirmPage.getSuccessText().text
+        log.info(f"Text received from application is {successText}")
 
         assert "Success! Thank you!" in successText
 

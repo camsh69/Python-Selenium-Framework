@@ -13,7 +13,7 @@ class HomePage:
     password = (By.ID, 'exampleInputPassword1')
     checkBox = (By.ID, 'exampleCheck1')
     gender = (By.ID, 'exampleFormControlSelect1')
-    submit = (By.XPATH, "//input[@type='submit']")
+    submitBtn = (By.XPATH, "//input[@type='submit']")
     message = (By.CLASS_NAME, 'alert-success')
 
     def shopItems(self):
@@ -34,7 +34,7 @@ class HomePage:
         return self.driver.find_element(*HomePage.checkBox)
 
     def selectSubmit(self):
-        return self.driver.find_element(*HomePage.submit)
+        return self.driver.find_element(*HomePage.submitBtn)
 
     def selectMessage(self):
         return self.driver.find_element(*HomePage.message)
