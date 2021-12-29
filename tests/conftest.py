@@ -14,12 +14,15 @@ def pytest_addoption(parser):
 
 @pytest.fixture(scope="class")
 def setup(request):
-
+    headless = False
     browser_name = request.config.getoption("--browser_name")
-    # allows to choose browser to run test - 'pytest --browser_name=firefox' for example
+    # choose browser to run test, default is chrome - 'pytest --browser_name=firefox' for example
     if browser_name == "chrome":
         service = Service(ChromeDriverManager().install())
         options = webdriver.ChromeOptions()
+        if headless:
+            options.add_argument('--headless')
+            options.add_argument('--window-size=1920x1080')
         options.add_experimental_option('excludeSwitches', ['enable-logging'])
         driver = webdriver.Chrome(service=service, options=options)
     elif browser_name == "firefox":

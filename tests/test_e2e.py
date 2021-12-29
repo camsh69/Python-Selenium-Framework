@@ -1,6 +1,5 @@
-import pytest
-from pageObjects.CheckoutPage import CheckOutPage
 from utilities.BaseClass import BaseClass
+from pageObjects.CheckoutPage import CheckOutPage
 from pageObjects.HomePage import HomePage
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
