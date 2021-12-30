@@ -1,4 +1,6 @@
 import pytest
+# import os
+# import shutil
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
@@ -43,6 +45,11 @@ def setup(request):
     driver.close()
 
 
+# @pytest.hookimpl(tryfirst=True)
+# def pytest_configure(config):
+#     config.option.htmlpath = 'tests/reports/report.html'
+
+
 @pytest.mark.hookwrapper
 def pytest_runtest_makereport(item):
     """
@@ -67,4 +74,12 @@ def pytest_runtest_makereport(item):
 
 
 def _capture_screenshot(name):
-    driver.get_screenshot_as_file(name)
+    driver.save_screenshot(name)
+    # source = os.path.join(
+    #     'C:\\Users\\camsh\\Projects\\Python_Selenium\\PythonSeleniumFramework\\tests')
+    # sort = os.path.join(
+    #     'C:\\Users\\camsh\\Projects\\Python_Selenium\\PythonSeleniumFramework\\tests\\reports')
+
+    # for f in os.listdir(source):
+    #     if f.endswith((".png")):
+    #         shutil.move(os.path.join(source, f), sort)

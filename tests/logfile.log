@@ -1,24 +1,24 @@
-2021-12-29 16:56:42,491 :INFO :test_e2e :getting all the card titles
-2021-12-29 16:56:43,740 :INFO :test_e2e :iphone X
-2021-12-29 16:56:43,752 :INFO :test_e2e :Samsung Note 8
-2021-12-29 16:56:43,763 :INFO :test_e2e :Nokia Edge
-2021-12-29 16:56:43,774 :INFO :test_e2e :Blackberry
-2021-12-29 16:56:43,910 :INFO :test_e2e :Entering country name as 'ind'
-2021-12-29 16:56:49,123 :INFO :test_e2e :Text received from application is ×
+2021-12-30 10:58:40,477 :INFO :test_e2e :getting all the card titles
+2021-12-30 10:58:43,810 :INFO :test_e2e :iphone X
+2021-12-30 10:58:43,838 :INFO :test_e2e :Samsung Note 8
+2021-12-30 10:58:43,869 :INFO :test_e2e :Nokia Edge
+2021-12-30 10:58:43,894 :INFO :test_e2e :Blackberry
+2021-12-30 10:58:44,209 :INFO :test_e2e :Entering country name as 'ind'
+2021-12-30 10:58:49,675 :INFO :test_e2e :Text received from application is ×
 Success! Thank you! Your order will be delivered in next few weeks :-).
-2021-12-29 16:59:11,504 :INFO :test_e2e :getting all the card titles
-2021-12-29 16:59:12,723 :INFO :test_e2e :iphone X
-2021-12-29 16:59:12,734 :INFO :test_e2e :Samsung Note 8
-2021-12-29 16:59:12,745 :INFO :test_e2e :Nokia Edge
-2021-12-29 16:59:12,759 :INFO :test_e2e :Blackberry
-2021-12-29 16:59:12,898 :INFO :test_e2e :Entering country name as 'ind'
-2021-12-29 16:59:18,130 :INFO :test_e2e :Text received from application is ×
+2021-12-30 11:03:03,580 :INFO :test_e2e :getting all the card titles
+2021-12-30 11:03:07,794 :INFO :test_e2e :iphone X
+2021-12-30 11:03:07,809 :INFO :test_e2e :Samsung Note 8
+2021-12-30 11:03:07,823 :INFO :test_e2e :Nokia Edge
+2021-12-30 11:03:07,839 :INFO :test_e2e :Blackberry
+2021-12-30 11:03:08,010 :INFO :test_e2e :Entering country name as 'ind'
+2021-12-30 11:03:13,225 :INFO :test_e2e :Text received from application is ×
 Success! Thank you! Your order will be delivered in next few weeks :-).
-2021-12-29 17:00:28,491 :INFO :test_e2e :getting all the card titles
-2021-12-29 17:00:29,733 :INFO :test_e2e :iphone X
-2021-12-29 17:00:29,744 :INFO :test_e2e :Samsung Note 8
-2021-12-29 17:00:29,757 :INFO :test_e2e :Nokia Edge
-2021-12-29 17:00:29,770 :INFO :test_e2e :Blackberry
-2021-12-29 17:00:29,904 :INFO :test_e2e :Entering country name as 'ind'
-2021-12-29 17:00:35,095 :INFO :test_e2e :Text received from application is ×
+2021-12-30 11:14:49,423 :INFO :test_e2e :getting all the card titles
+2021-12-30 11:14:53,142 :INFO :test_e2e :iphone X
+2021-12-30 11:14:53,153 :INFO :test_e2e :Samsung Note 8
+2021-12-30 11:14:53,166 :INFO :test_e2e :Nokia Edge
+2021-12-30 11:14:53,177 :INFO :test_e2e :Blackberry
+2021-12-30 11:14:53,310 :INFO :test_e2e :Entering country name as 'ind'
+2021-12-30 11:14:58,558 :INFO :test_e2e :Text received from application is ×
 Success! Thank you! Your order will be delivered in next few weeks :-).
