@@ -3,7 +3,6 @@ from pageObjects.HomePage import HomePage
 
 
 class TestOne(BaseClass):
-
     def test_e2e(self):
         log = self.getLogger()
         homePage = HomePage(self.driver)
