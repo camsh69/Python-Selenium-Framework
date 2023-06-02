@@ -30,14 +30,14 @@ Set Python home in Environment Variables
 - Edit 'Path'
 - Set a new path to match the path where Python was installed
 - Repeat above and add path for, e.g. C:\Users\(Your logged in User)\AppData\Local\Programs\Python\PythonXX/Scripts
-- Open a new Command Prompt and enter: python --version
+- Open a new Command Prompt and enter: `python --version`
 - If a response is returned then everything is installed fine
 
 #### Mac
 
 Path variable is automatically by MacOS on install
 
-- Open a new terminal and enter: which python3
+- Open a new terminal and enter: `which python3`
 - If a response is returned with a path then everything is installed OK
 
 ## Install Selenium
