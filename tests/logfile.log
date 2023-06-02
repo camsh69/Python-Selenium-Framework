@@ -11,3 +11,11 @@
 2023-06-02 11:33:58,172 :INFO :test_e2e :Entering country name as 'ind'
 2023-06-02 11:34:04,515 :INFO :test_e2e :Text received from application is ×
 Success! Thank you! Your order will be delivered in next few weeks :-).
+2023-06-02 14:46:34,269 :INFO :test_e2e :getting all the card titles
+2023-06-02 14:46:36,568 :INFO :test_e2e :iphone X
+2023-06-02 14:46:36,710 :INFO :test_e2e :Samsung Note 8
+2023-06-02 14:46:36,734 :INFO :test_e2e :Nokia Edge
+2023-06-02 14:46:36,742 :INFO :test_e2e :Blackberry
+2023-06-02 14:46:39,184 :INFO :test_e2e :Entering country name as 'ind'
+2023-06-02 14:46:45,574 :INFO :test_e2e :Text received from application is ×
+Success! Thank you! Your order will be delivered in next few weeks :-).

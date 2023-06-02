@@ -2,14 +2,14 @@
 
 `cd` into tests folder to run tests - this ensures report.html, screenshots and logfiles are generated within tests folder
 
-`pytest -v` to run all tests,
-`python --browser_name=chrome` to run a particular browser (firefox and edge also configured).
+`pytest` to run all tests (default browser is Chrome),
+`pytest --browser_name=firefox` to run test in a particular browser (also edge)
+`pytest --html=report.html` to run test and generate a report.
 Also `-v` for verbose, `-s` for added info and `-q` for quiet,
-`python --html=report.html` to generate a report
 
 #### TO DO
 
-Fix screenshotting and report generation
+Fix screenshotting
 
 ## Installs/Dependencies
 
@@ -49,14 +49,14 @@ https://pypi.org/project/selenium
 #### Windows
 
 - In CMD
-- pip install selenium
-- To check: pip show selenium
+- `pip install selenium`
+- To check: `pip show selenium`
 
 #### Mac
 
 - In a terminal
-- pip3 install selenium
-- To check: pip3 show selenium
+- `pip3 install selenium`
+- To check: `pip3 show selenium`
 
 \*\* Make sure the browsers on your machine, e.g. Chrome, are updated to latest version (Selenium will throw errors if it's version of, for example, Chromedriver doesn't match your version)
 
@@ -66,15 +66,23 @@ https://docs.pytest.org/en/7.1.x/getting-started.html
 
 #### Windows
 
-- In CMD
-- pip install -U pytest
-- To check: pytest --version
+- `pip install -U pytest`
 
 #### Mac
 
-- In a terminal
-- pip3 install -U pytest
-- To check: pytest --version
+- `pip3 install -U pytest`
+
+## Install Pytest-HTML
+
+https://pypi.org/project/pytest-html
+
+#### Windows
+
+- `pip install -U pytest-html`
+
+#### Mac
+
+- `pip3 install -U pytest-htm`
 
 ## Install a code editor
 
