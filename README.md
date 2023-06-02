@@ -2,10 +2,10 @@
 
 `cd` into tests folder to run tests - this ensures report.html, screenshots and logfiles are generated within tests folder
 
-`pytest` to run all tests (default browser is Chrome),
-`pytest --browser_name=firefox` to run test in a particular browser (also edge)
-`pytest --html=report.html` to run test and generate a report.
-Also `-v` for verbose, `-s` for added info and `-q` for quiet,
+- `pytest` to run all tests (default browser is Chrome),
+- `pytest --browser_name=firefox` to run test in a particular browser (also edge)
+- `pytest --html=report.html` to run test and generate a report.
+- Also `-v` for verbose, `-s` for added info and `-q` for quiet,
 
 #### TO DO
 
