@@ -66,11 +66,11 @@ https://docs.pytest.org/en/7.1.x/getting-started.html
 
 #### Windows
 
-- `pip install -U pytest`
+- `pip install pytest`
 
 #### Mac
 
-- `pip3 install -U pytest`
+- `pip3 install pytest`
 
 ## Install Pytest-HTML
 
