@@ -9,7 +9,7 @@
 
 #### TO DO
 
-Fix screenshotting. Add BDD.
+Add BDD.
 
 ## Installs/Dependencies
 
