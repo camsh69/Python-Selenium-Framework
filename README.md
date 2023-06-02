@@ -35,7 +35,7 @@ Set Python home in Environment Variables
 
 #### Mac
 
-Path variable is automatically by MacOS on install
+Path variable is set automatically by MacOS on install
 
 - Open a new terminal and enter: `which python3`
 - If a response is returned with a path then everything is installed OK
