@@ -78,11 +78,11 @@ https://pypi.org/project/pytest-html
 
 #### Windows
 
-- `pip install -U pytest-html`
+- `pip install pytest-html`
 
 #### Mac
 
-- `pip3 install -U pytest-htm`
+- `pip3 install pytest-htm`
 
 ## Install a code editor
 
