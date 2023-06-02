@@ -3,7 +3,7 @@
 `cd` into tests folder to run tests - this ensures report.html, screenshots and logfiles are generated within tests folder
 
 `pytest -v` to run all tests,
-`python --browser_name=chrome` to run a particular browser (firefox and edge also configured)
+`python --browser_name=chrome` to run a particular browser (firefox and edge also configured).
 Also `-v` for verbose, `-s` for added info and `-q` for quiet,
 `python --html=report.html` to generate a report
 
@@ -48,11 +48,13 @@ https://pypi.org/project/selenium
 
 #### Windows
 
+- In CMD
 - pip install selenium
 - To check: pip show selenium
 
 #### Mac
 
+- In a terminal
 - pip3 install selenium
 - To check: pip3 show selenium
 
@@ -64,11 +66,13 @@ https://docs.pytest.org/en/7.1.x/getting-started.html
 
 #### Windows
 
+- In CMD
 - pip install -U pytest
 - To check: pytest --version
 
 #### Mac
 
+- In a terminal
 - pip3 install -U pytest
 - To check: pytest --version
 
