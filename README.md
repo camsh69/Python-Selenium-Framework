@@ -58,7 +58,7 @@ https://pypi.org/project/selenium
 - `pip3 install selenium`
 - To check: `pip3 show selenium`
 
-\*\* Make sure the browsers on your machine, e.g. Chrome, are updated to latest version (Selenium will throw errors if it's version of, for example, Chromedriver doesn't match your version)
+\*\* Make sure the browsers on your machine, e.g. Chrome, are updated to latest version (Selenium will throw errors if its version of, for example, Chromedriver doesn't match your version)
 
 ## Install PyTest
 
